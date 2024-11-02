@@ -37,6 +37,7 @@ for (item of buttons) {
       isSign = true;
     } else if (buttonText == "=") {
       checkForBracketMulti();
+      new Audio("sounds/bird.mp3").play();
       if (parseFloat(screen.value) < 0) {
         screen.classList.add("negative");
       } else {
